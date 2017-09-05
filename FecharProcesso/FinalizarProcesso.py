@@ -46,13 +46,13 @@ class FinalizarProcesso(object):
                 if GetAsyncKeyState(i) & 1:
                     if i in special_keys:#teclas especiais 
                         self.__zerarTempo()
-                        print ("<%s>" % special_keys[i])
+                       # print ("<%s>" % special_keys[i])
                     elif 0x30 <= i <= 0x5a:#Teclas letras
                         self.__zerarTempo()
-                        print ("%c" % i)
+                       # print ("%c" % i)
                     else:#click do mouse
                         self.__zerarTempo()
-                        print ("[%02x]" % i)
+                       # print ("[%02x]" % i)
             sys.stdout.flush()  
             time.sleep(0.001)
     
